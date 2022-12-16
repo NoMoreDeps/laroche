@@ -1,0 +1,166 @@
+/* declare a css variable with color 272727*/
+:root {
+  --color  : #272727;
+  --color2 : #9c2121;
+}
+
+html * {
+  margin : 0px;
+  color  : white;
+}
+
+* {
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  box-sizing         : border-box;
+}
+
+
+@media (min-width: 0px) { /*xs*/
+  .show-xsp {
+    display : block;
+  }
+  .show-xs {
+    display : block;
+  }
+  .show-xsm {
+    display : block;
+  }
+
+  .show-sm {
+    display : none;
+  }
+  .show-smp {
+    display : none;
+  }
+  .show-smm {
+    display : block;
+  }
+
+  .show-mdp {
+    display : none;
+  }
+  .show-md {
+    display : none;
+  }
+  .show-mdm {
+    display : block;
+  }
+
+  .show-lgp {
+    display : none;
+  }
+  .show-lg {
+    display : none;
+  }
+  .show-lgm {
+    display : block;
+  }
+
+
+  .show-xlp {
+    display : none;
+  }
+  .show-xl {
+    display : none;
+  }
+  .show-xlm {
+    display : block;
+  }
+
+  .show-xxlp {
+    display : none;
+  }
+  .show-xxl {
+    display : none;
+  }
+  .show-xxlm {
+    display : block;
+  }
+}
+
+@media (min-width: 576px) { /*sm*/
+  .show-xs {
+    display : none;
+  }
+  .show-xsm {
+    display : none;
+  }
+
+  .show-sm {
+    display : block;
+  }
+  .show-smp {
+    display : block;
+  }
+}
+
+@media (min-width: 768px) {/*md*/
+  .show-sm {
+    display : none;
+  }
+  .show-smm {
+    display : none;
+  }
+
+  .show-mdp {
+    display : block;
+  }
+  .show-md {
+    display : block;
+  }
+}
+
+
+@media (min-width: 992px) {/*lg*/
+  .show-md {
+    display : none;
+  }
+  .show-mdm {
+    display : none;
+  }
+
+
+  .show-lgp {
+    display : block;
+  }
+  .show-lg {
+    display : block;
+  }
+
+}
+
+
+@media (min-width: 1200px) {/*xl*/
+  .show-lg {
+    display : none;
+  }
+  .show-lgm {
+    display : none;
+  }
+
+
+  .show-xlp {
+    display : block;
+  }
+  .show-xl {
+    display : block;
+  }
+}
+
+@media (min-width: 1400px) {/*xxl*/
+  .show-xl {
+    display : none;
+  }
+  .show-xlm {
+    display : none;
+  }
+
+
+  .show-xxlp {
+    display : block;
+  }
+  .show-xxl {
+    display : block;
+  }
+}

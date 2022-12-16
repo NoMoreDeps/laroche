@@ -1,0 +1,308 @@
+/* ======= Google fonts (Oswald & Didact Gothic) ======= */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family : 'Oswald', sans-serif;
+  overflow-x  : hidden;
+}
+
+/* create a div that fit all the screen */
+.container {
+  background-color      : var(--color);
+  background-image      : url(../img/1.jpg);
+  background-position-x : center;
+  background-position-y : center;
+  background-size       : cover;
+  height                : 100vh;
+  max-width             : 100%;
+  width                 : 100vw;
+}
+
+.container2 {
+  background-color : var(--color);
+  max-width        : 100%;
+  width            : 100vw;
+  padding-bottom   : 50px;
+}
+
+.menu-bar {
+  background-color : var(--color);
+  height           : 80px;
+  position         : fixed;
+  top              : 0px;
+  width            : 100%;
+  z-index          : 9999;
+}
+
+.menu-bar>.logo {
+  background-image : url(../img/logo.png);
+  background-size  : cover;
+  height           : 53px;
+  left             : 15px;
+  position         : absolute;
+  top              : 15px;
+  width            : 75px;
+}
+
+.menu-bar-squared {
+  background-color : var(--color);
+  height           : 196px;
+  position         : absolute;
+  top              : 0px;
+  width            : 250px;
+}
+
+.main-text-01 {
+  color          : white;
+  font-family    : 'Roboto', sans-serif;
+  font-size      : 34px;
+  font-weight    : 400;
+  height         : 121px;
+  line-height    : 1.2;
+  position       : absolute;
+  right          : 21px;
+  text-align     : right;
+  text-transform : uppercase;
+  top            : 189px;
+  width          : 275px;
+}
+
+.main-desc-01 {
+  color       : white;
+  font-family : 'Didact Gothic', sans-serif;
+  font-size   : 18px;
+  font-weight : 400;
+  line-height : 1.2;
+  position    : absolute;
+  right       : 21px;
+  text-align  : right;
+  top         : 367px;
+  width       : 359px;
+}
+
+.main-desc-02 {
+  color       : #999;
+  font-family : 'Didact Gothic', sans-serif;
+  font-size   : 18px;
+  font-weight : 400;
+  line-height : 1.2;
+  right       : 21px;
+  text-align  : justify;
+  top         : 100px;
+}
+
+.overlay {
+  background-color : #00000022;
+  height           : 100%;
+  width            : 100%;
+}
+
+.section-title {
+  color          : #fff;
+  font-family    : 'Oswald', sans-serif;
+  font-size      : 37px;
+  font-weight    : 400;
+  letter-spacing : 8px;
+  line-height    : 1.25em;
+  margin         : 0 0 20px 0;
+  margin-bottom  : 30px;
+  position       : relative;
+  text-transform : uppercase;
+  word-spacing   : 3px;
+  white-space    : nowrap;
+}
+
+.section-title span {
+  color : #b19777;
+}
+
+.section-title-pos {
+  padding-left  : 10%;
+  padding-right : 10%;
+  padding-top   : 20px;
+}
+
+.relative {
+  position : relative;
+}
+
+.relative-max {
+  height   : 100%;
+  position : relative;
+  width    : 100%;
+}
+
+.office-ct {
+  width            : 100%;
+  height           : 266px;
+  margin-bottom    : 30px;
+  margin-top       : 30px;
+  position         : relative;
+}
+
+.office-image {
+  background-image : url(../img/about.jpg);
+  background-size  : cover;
+  height           : 212px;
+  position         : absolute;
+  width            : 311px;
+}
+
+.office-title {
+  background-color : #323232;
+  border           : 1px solid #99999922;
+  color            : #fff;
+  font-family      : 'Oswald', sans-serif;
+  font-size        : 13px;
+  font-weight      : 300;
+  letter-spacing   : 5px;
+  line-height      : 1.5em;
+  padding          : 20px 15px;
+  position         : absolute;
+  right            : 45px;
+  text-align       : center;
+  text-transform   : uppercase;
+  top              : 162px;
+  width            : 40% !important;
+  z-index          : 3;
+}
+
+.projects-ct {
+  width         : calc(80vw);
+  height        : calc(80vw / 1.7);
+  margin-bottom : 30px;
+  margin-top    : 30px;
+  position      : relative;
+  border        : 1px solid #999;
+  overflow      : hidden;
+  position      : relative;
+}
+
+.projects-slide {
+  background-size  : cover;
+  height           : 100%;
+  position         : absolute;
+  width            : 100%;
+}
+
+.slide-info {
+  width            : 100%;
+  height           : 48px;
+  position         : absolute;
+  bottom           : 0px;
+  text-align       : center;
+  background-color : #32323291;
+}
+
+.push-up {
+  margin-top: 100px;
+}
+
+.service-icon > img {
+  width         : 60px;
+  margin-bottom : 20px;
+}
+
+.service-item {
+  margin-bottom : 100px;
+}
+
+.service-title {
+  font-size       : 16px;
+  font-weight    : 300;
+  margin-bottom  : 15px;
+  color          : #fff;
+  text-transform : uppercase;
+  letter-spacing : 5px;
+}
+
+.service-separator {
+  border-bottom : 1px solid #3d3d3d;
+  width         : 50px;
+  margin-bottom : 15px;
+}
+
+.service-desc {
+  font-family : 'Didact Gothic', sans-serif;
+  font-size   : 16px;
+  font-weight : 400;
+  line-height : 1.75em;
+  color       : #999;
+}
+
+.contact-container {
+  background-color : #999
+}
+
+.contact-content {
+  background-color : #1a1a1a;
+  position         : absolute;
+  width            : 100%;
+  left             : 0px;
+  padding          : 5%;
+}
+
+.contact-label {
+  color          : #b19777;
+  font-family    : 'Didact Gothic', sans-serif;
+  font-family    : 'Oswald',        sans-serif;
+  font-size      : 16px;
+  font-weight    : 400;
+  line-height    : 1.25em;
+  margin         : 0 0 20px 0;
+  margin-bottom  : 0px;
+  padding-bottom : 5px;
+  position       : relative;
+}
+
+.contact-value {
+  color         : #999;
+  font-family   : 'Didact Gothic', sans-serif;
+  font-size     : 16px;
+  font-weight   : 400;
+  line-height   : 1.75em;
+  margin-bottom : 20px;
+}
+
+.text-left {
+  color         : #918f91!important;
+  font-family   : 'Didact Gothic', sans-serif;
+  font-size     : 14px;
+  font-weight   : 400;
+  line-height   : 1.75em;
+  margin-bottom : 20px;
+  margin-top    : 7px;
+}
+
+.hr-separator {
+  border        : none;
+  border-bottom : 1px solid #918f91;
+  margin-top    : 30px;
+  margin-bottom : 30px;
+}
+
+.right-slider {
+  position         : absolute;
+  width            : 40px;
+  height           : 48px;
+  background-color : #00000099;
+  z-index          : 9999;
+  font-size        : 20px;
+  text-align       : center;
+  line-height      : 53px;
+  right            : 0px;
+  top              : 119px;
+}
+
+.left-slider {
+  position         : absolute;
+  width            : 40px;
+  height           : 48px;
+  background-color : #00000099;
+  z-index          : 9999;
+  font-size        : 20px;
+  text-align       : center;
+  line-height      : 53px;
+  left            : 0px;
+  top              : 119px;
+}

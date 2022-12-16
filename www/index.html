@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/utils.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <div class="menu-bar show-smm">
+    <div class="logo"></div>
+  </div>
+  <div class="menu-bar-squared show-mdp"></div>
+  <div class="container relative">
+    <div class="overlay"></div>
+    <div class="main-text-01">innovative design in Dubai</div>
+    <div class="main-desc-01">
+      <br />
+      <br />
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+      <br />
+      <br />
+    </div>
+  </div>
+  <div class="container2 relative">
+    <div>
+      <div class="section-title-pos">
+        <h2 class="section-title push-up">About <span>US</span></h2>
+        <div class="main-desc-02">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          <br />
+          <br />
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+        </div>
+        <div class="office-ct">
+          <div class="office-image"></div>
+          <div class="office-title">our office</div>
+        </div>
+        <div>
+          <h2 class="section-title push-up">OUR <span>PROJEcts</span></h2>
+          <div class="projects-ct">
+            <div class="right-slider" onclick="nextProjectSlide()">></div>
+            <div class="left-slider" onclick="prevProjectSlide()"><</div>
+            <div class="slide1 projects-slide">
+              <div class="slide-info">
+                <div>Project xxxxx</div>
+                <div>Jun-2021 / Dubai</div>
+              </div>
+            </div>
+            <div class="slide2 projects-slide">
+              <div class="slide-info">
+                <div>Project yyy yyy</div>
+                <div>Jun-2020 / Abu dhabi</div>
+              </div>
+            </div>
+            <div class="slide3 projects-slide">
+              <div class="slide-info">
+                <div>Project zzzzz</div>
+                <div>Jun-2022 / Al Ghadeer</div>
+              </div>
+            </div>
+            <div class="slide4 projects-slide">
+              <div class="slide-info">
+                <div>Project AAAA</div>
+                <div>Jun-2022 / Dubai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="section-title push-up">OUR <span>Services</span></h2>
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./img/icon-1.png" alt="icon1" />
+            </div>
+            <div class="service-title">Architecture</div>
+            <div class="service-separator"></div>
+            <div class="service-desc">
+              Architecture bibendum eros eget lacus the vulputate sit amet vehicuta nibhen ulicera in the vitae miss.            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./img/icon-2.png" alt="icon1" />
+            </div>
+            <div class="service-title">Interior Design</div>
+            <div class="service-separator"></div>
+            <div class="service-desc">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">
+              <img src="./img/icon-3.png" alt="icon1" />
+            </div>
+            <div class="service-title">Urban Design</div>
+            <div class="service-separator"></div>
+            <div class="service-desc">
+              Architecture bibendum eros eget lacus the vulputate sit amet vehicuta nibhen ulicera in the vitae miss.
+            </div>
+          </div>
+        </div>  
+
+        <div>
+          <div class="contact-container push-up">
+            <div class="contact-content">
+              <h2 class="section-title">Contact <span>us</span></h2>
+              <div class="contact-info">
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+971 58 578 6598</div>
+              </div>
+        
+              <div class="contact-info">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">xxxxxxxxxx@yyyyy.com</div>
+              </div>
+        
+              <div class="contact-info">
+                <div class="contact-label">Address</div>
+                <div class="contact-value">24 King St, Charleston, SC 29401 USA</div>
+              </div>
+        
+              <hr class="hr-separator" />
+        
+              <div>
+                <p  class="text-left">© 2022 XXXXX. All right reserved.</p>
+              </div>
+        
+              <div class="social-icon">
+                <a href="index.html"><i class="ti-facebook"></i></a>
+                <a href="index.html"><i class="ti-twitter"></i></a>
+                <a href="index.html"><i class="ti-instagram"></i></a>
+                <a href="index.html"><i class="ti-pinterest"></i></a>
+              </div>
+
+              <p class="right"><a href="#" class="text-left">Terms &amp; Conditions</a></p>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    import * as App from './js/App.js';
+    const app = App.default;
+    app.InitializeAppConfiguration();
+    app.startProjectSlider();
+
+    window.nextProjectSlide = () => {
+      app.nextProjectSlide();
+    }
+
+    window.prevProjectSlide = () => {
+      app.prevProjectSlide();
+    }
+  </script>
+</body>
+</html>
