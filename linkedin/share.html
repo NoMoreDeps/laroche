@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Example Page</title>
-  
+
   <!-- Bootstrap CSS from CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container py-5">
@@ -16,21 +16,25 @@
       <button type="button" class="btn btn-primary" id="shareButton">Share my certificate</button>
     </div>
   </div>
-  
+
   <!-- Bootstrap JavaScript from CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.4.0/js/bootstrap.bundle.min.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
   <!-- JavaScript to handle button click -->
   <script>
-    const shareUrl = 'https://nomoredeps.github.io/laroche/linkedin/certificate.html';
+    const shareUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=https://nomoredeps.github.io/laroche/linkedin/certificate.html';
+    const shareUrlMobile = 'https://nomoredeps.github.io/laroche/linkedin/certificate.html';
     const shareButton = document.getElementById('shareButton');
-    
+
     shareButton.addEventListener('click', function() {
       // Check if Web Share API is available and user is on a mobile device
       if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
         navigator.share({
           title: 'Check out my certificate',
-          url: shareUrl,
+          url: shareUrlMobile,
+          mode: 'share'
         })
         .catch(console.error);
       } else {
